@@ -1,0 +1,76 @@
+[{
+    "id": 1,
+    "name": "Book 01",
+    "author": "Author 01",
+    "price": "$12.21",
+    "imageURL": "https://i.ibb.co/Lxs9Tjs/1.jpg"
+  }, {
+    "id": 2,
+    "name": "Book 02",
+    "author": "Author 02",
+    "price": "$11.68",
+    "imageURL": "https://i.ibb.co/vzVyVhR/2.jpg"
+  }, {
+    "id": 3,
+    "name": "Book 03",
+    "author": "Author 03",
+    "price": "$11.84",
+    "imageURL": "https://i.ibb.co/c8nSF22/3.jpg"
+  }, {
+    "id": 4,
+    "name": "Book 04",
+    "author": "Author 04",
+    "price": "$12.37",
+    "imageURL": "https://i.ibb.co/yBBStBh/81l-C-c-MVj-L.jpg"
+  }, {
+    "id": 5,
+    "name": "Book 05",
+    "author": "Author 05",
+    "price": "$16.94",
+    "imageURL": "https://i.ibb.co/2jmjL8S/8.jpg"
+  }, {
+    "id": 6,
+    "name": "Book 06",
+    "author": "Author 06",
+    "price": "$14.08",
+    "imageURL": "https://i.ibb.co/WG7xMJK/7.png"
+  }, {
+    "id": 7,
+    "name": "Book 07",
+    "author": "Author 07",
+    "price": "$14.30",
+    "imageURL": "https://i.ibb.co/XD93fHV/6.jpg"
+  }, {
+    "id": 8,
+    "name": "Book 08",
+    "author": "Author 08",
+    "price": "$11.34",
+    "imageURL": "https://i.ibb.co/3f2S5zw/5.jpg"
+  }, {
+    "id": 9,
+    "name": "Book 09",
+    "author": "Author 09",
+    "price": "$14.04",
+    "imageURL": "https://i.ibb.co/S3BSnD0/4.jpg"
+  }, {
+    "id": 10,
+    "name": "Book 10",
+    "author": "Author 10",
+    "price": "$18.60",
+    "imageURL": "https://i.ibb.co/nrmvV3L/3.jpg"
+  }, {
+    "id": 11,
+    "name": "Book 11",
+    "author": "Author 11",
+    "price": "$19.65",
+    "imageURL": "https://i.ibb.co/x2mxZK2/2.jpg"
+  }, {
+    "id": 12,
+    "name": "Book 12",
+    "author": "Author 12",
+    "price": "$16.53",
+    "imageURL": "https://i.ibb.co/vLsxmk6/1.jpg"
+  }]
+
+  
+
