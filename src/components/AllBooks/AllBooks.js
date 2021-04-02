@@ -14,7 +14,6 @@ const AllBooks = () => {
     }, [])
     return (
         <div>
-            <h1>All books here</h1>
             <div className="table-div">
                 <table className="table">
                     <thead>

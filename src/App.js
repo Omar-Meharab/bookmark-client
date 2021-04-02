@@ -9,9 +9,7 @@ import Home from "./components/Home/Home";
 import Admin from "./components/Admin/Admin";
 import Orders from "./components/Orders/Orders";
 import './App.css';
-import AllBooks from "./components/AllBooks/AllBooks";
 import NoMatch from "./components/NoMatch/NoMatch";
-import AddBooks from "./components/AddBooks/AddBooks";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Login from "./components/Login/Login";
 
@@ -36,22 +34,10 @@ function App() {
               <li>
                 <Link to="/"><strong>Home</strong></Link>
               </li>
-              <li>
-                <Link to="/allbooks"><strong>All Books</strong></Link>
-              </li>
-              <li>
-                <Link to="/addBooks"><strong>Add Books</strong></Link>
-              </li>
             </ul>
           </nav>
 
           <Switch>
-            <PrivateRoute path="/addBooks">
-              <AddBooks />
-            </PrivateRoute>
-            <PrivateRoute path="/allbooks">
-              <AllBooks />
-            </PrivateRoute>
             <PrivateRoute path="/admin">
               <Admin />
             </PrivateRoute>
