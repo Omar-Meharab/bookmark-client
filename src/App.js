@@ -12,6 +12,7 @@ import './App.css';
 import NoMatch from "./components/NoMatch/NoMatch";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Login from "./components/Login/Login";
+import CheckOut from "./components/CheckOut/CheckOut";
 
 export const UserContext = createContext();
 
@@ -43,6 +44,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/orders">
               <Orders />
+            </PrivateRoute>
+            <PrivateRoute path="/checkout/:id">
+              <CheckOut />
             </PrivateRoute>
             <Route exact path="/">
               <Home />
