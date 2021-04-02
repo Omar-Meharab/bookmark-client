@@ -1,33 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { UserContext } from '../../App';
 
-const Orders = () => {
+const Bookings = () => {
+    const [orders, setOrders] = useState([]);
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    useEffect(() => {
+        fetch('https://dry-castle-85178.herokuapp.com/orders?email='+loggedInUser.email, {
+            method: 'GET',
+            headers: { 
+                'Content-Type': 'application/json',
+                authorization: `Bearer ${sessionStorage.getItem('token')}`
+             }
+        })
+        .then(res => res.json())
+        .then(data => setOrders(data));
+    }, [])
+
     return (
         <div>
-            <h1>this is orders</h1>
-            <div className="table-div">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Buyer</th>
-                        <th scope="col">Book Name</th>
-                        <th scope="col">Author Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
+            <h3>You have: {orders.length} Orders</h3>
+            {
+                orders.map(book => <li key={book._id}>{book.name}</li>)
+            }
         </div>
     );
 };
 
-export default Orders;
+export default Bookings;
