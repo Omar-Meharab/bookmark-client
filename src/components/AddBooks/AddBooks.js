@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const AddBooks = () => {
     const { register, handleSubmit, watch, errors } = useForm();
-    const [imageURL, setImageURL] = useState(null);
+    const [imageURL, setImageURL] = useState();
 
 
     const onSubmit = data => {
@@ -15,7 +15,7 @@ const AddBooks = () => {
             price: data.price,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addBooks`
+        const url = `https://dry-castle-85178.herokuapp.com/addBooks`
         fetch(url, {
             method: 'POST',
             headers: {
