@@ -5,14 +5,10 @@ const BookList = (props) => {
 
     const deleteBook = (id) => {
         fetch(`https://dry-castle-85178.herokuapp.com/deleteBook/${id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(id)
+            method: 'DELETE'
         })
         .then(res => res.json())
-        .then(res =>  console.log(res))
+        .then(result =>  console.log('deleted'))
     }
     
     return (

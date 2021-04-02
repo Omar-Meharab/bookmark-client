@@ -1,3 +1,4 @@
+import './Orders.css'
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../../App';
@@ -21,9 +22,22 @@ const Bookings = () => {
     return (
         <div>
             <h3>You have: {orders.length} Orders</h3>
+            <div className="table-container">
+            <table className="order-table table">
             {
-                orders.map(book => <li key={book._id}>{book.name}</li>)
+                orders.map(book =>
+                <thead key={book._id}>
+                    <tr>
+                        <td>{loggedInUser.name}</td>
+                        <td>{book.name}</td>
+                        <td>{book.autor}</td>
+                        <td>{book.price}</td>
+                    </tr>
+                </thead>
+                )
             }
+            </table>
+            </div>
         </div>
     );
 };

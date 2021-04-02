@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const AddBooks = () => {
     const { register, handleSubmit, watch, errors } = useForm();
-    const [imageURL, setImageURL] = useState();
+    const [imageURL, setImageURL] = useState(null);
 
 
     const onSubmit = data => {
@@ -27,7 +27,6 @@ const AddBooks = () => {
     };
 
     const handleImageUpload = event => {
-        console.log(event.target.files[0]);
         const imageData = new FormData();
         imageData.set('key', 'd7b58dd4a615c2b48d8bd42eb97d1a8f');
         imageData.append('image', event.target.files[0])

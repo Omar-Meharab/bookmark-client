@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { UserContext } from '../../App';
 
 
 const CheckOut = () => {
     const { id } =useParams();
     const [book, setBook] = useState({});
+    const history = useHistory();
 
     const handleOrder = () => {
         const order = {...loggedInUser, ...book};
@@ -15,6 +16,7 @@ const CheckOut = () => {
             body: JSON.stringify(order)
         })
         .then(res => res.json())
+        history.push(`/orders`);
     }
 
     fetch(`https://dry-castle-85178.herokuapp.com/book/${id}`)
