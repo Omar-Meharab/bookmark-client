@@ -1,5 +1,7 @@
 # Bookmark Site
 
+This website is for a book selling company. The hompage hase navbar and shows books in rows and columbns. Customers can click on the books to go on checkout page. But hey will have to login with google.
+
 1. React, Bootstrap, HTML5, CSS3, Node.js, MogngoiDB, REST API, Heroku etc technology were used to develop this website.
 2. Firebase for authentication has been used.
 3. A site where you can find books to buy. It may not have too many books. but its a work in progress.
